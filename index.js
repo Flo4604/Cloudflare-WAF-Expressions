@@ -1,4 +1,5 @@
-process.loadEnvFile();
+const fs = require('fs');
+if (fs.existsSync('.env')) process.loadEnvFile();
 const { CronJob } = require('cron');
 const { pullAndRestart } = require('./data/services/updates.js');
 const updateWAFRules = require('./data/services/cloudflare/updateWAFRules.js');
