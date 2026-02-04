@@ -1,6 +1,9 @@
 {
   "name": "cf-waf-expressions",
   "version": "1.4.2",
+  "engines": {
+    "node": ">=20"
+  },
   "homepage": "https://github.com/sefinek/Cloudflare-WAF-Expressions#readme",
   "bugs": {
     "url": "https://github.com/sefinek/Cloudflare-WAF-Expressions/issues"
