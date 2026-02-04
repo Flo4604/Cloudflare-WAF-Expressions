@@ -31,8 +31,20 @@ If you find this repository useful, I would greatly appreciate it if you could g
 
 
 ## ✅ Usage
+### Deploy to Railway (one-click)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Flo4604/Cloudflare-WAF-Expressions)
+
+Click the button above to deploy this service to Railway. You'll need to configure these environment variables:
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `CF_API_TOKEN` | Yes | Your Cloudflare API token (40 characters) |
+| `PHP_SUPPORT` | No | Set to `true` if your website uses PHP |
+| `RULES_UPDATE_CRON` | No | Cron for rule updates (default: `0 13 * * *`) |
+| `GIT_PULL_CRON` | No | Cron for git pulls (default: `0 11,14,16,18,20 * * *`) |
+
 ### Automatic (highly recommended)<div id="automatic-installation"></div>
-You can use the JavaScript code from this repository to automatically update the rules throughout the day.  
+You can use the JavaScript code from this repository to automatically update the rules throughout the day.
 There's no need to add them manually, as the script takes care of everything for you (;
 
 #### Requirements
